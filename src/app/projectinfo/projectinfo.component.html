@@ -1,17 +1,42 @@
-<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-1">
-    <ngb-panel title="Overview">
-        <ng-template ngbPanelContent>
-            <p><span class="badge badge-primary">Title: {{project.title}}</span> /
-                <span class="badge badge-secondary">Taskid: {{project.taskid}}</span> /
-                <span class="badge badge-success">Status: {{project.status}}</span></p>
-            <p><span class="badge badge-info">Method: {{project.method}}</span> / <span
-                    class="badge badge-info">Created: {{project.createdtime  | date:"yyy-MM-dd"}}</span> / <span
-                    class="badge badge-info">Elapsed: {{project.elapsed }} mins</span></p>
-            <p>
-                <span class="badge badge-dark"><a type="button" href="assets/.report/ansatz.tdb">View TDB
-                        file</a></span>
-            </p>
-            <p></p>
-        </ng-template>
-    </ngb-panel>
-</ngb-accordion>
+<div class="gutter-example" *ngIf="project">
+    <div nz-row>
+        <div nz-col>
+            <nz-collapse>
+                <nz-collapse-panel [nzHeader]="'Overview'" [nzActive]="true">
+                    <div nz-row>
+                        <div nz-col>
+                            <p>
+                                <nz-breadcrumb>
+                                    <nz-breadcrumb-item>
+                                        Title: {{project.title}}
+                                    </nz-breadcrumb-item>
+                                    <nz-breadcrumb-item>
+                                        Taskid: {{project.taskid}}
+                                    </nz-breadcrumb-item>
+                                    <nz-breadcrumb-item>
+                                        Status: {{project.status}}
+                                    </nz-breadcrumb-item>
+                                </nz-breadcrumb>
+                            </p>
+                            <p>
+                                <nz-breadcrumb>
+                                    <nz-breadcrumb-item>
+                                        Method: {{project.method}}
+                                    </nz-breadcrumb-item>
+                                    <nz-breadcrumb-item>
+                                        Created: {{project.createdtime  | date:"yyy-MM-dd"}}
+                                    </nz-breadcrumb-item>
+                                    <nz-breadcrumb-item>
+                                        Elapsed: {{project.elapsed }} mins
+                                    </nz-breadcrumb-item>
+                                </nz-breadcrumb>
+                            </p>
+                            <p><a nz-button nzType="link" nzBlock href="assets/.report/ansatz.tdb">View TDB
+                                    file</a></p>
+                        </div>
+                    </div>
+                </nz-collapse-panel>
+            </nz-collapse>
+        </div>
+    </div>
+</div>

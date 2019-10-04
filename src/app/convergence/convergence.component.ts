@@ -12,12 +12,19 @@ export class ConvergenceComponent implements OnInit {
   project: Project;
   couples_src: string[];
 
-  constructor(public projectService: ProjectService) { }
+  constructor(public projectService: ProjectService) {
+  }
 
   ngOnInit() {
     this.projectService.GetProject().then(
-      project => this.project = project);
-    console.log(this.project.Result.Couples);
+      (project) => {
+        this.project = project;
+      }
+    )
+  }
+
+  TableData() {
+    return this.project.result.unknowns;
   }
 
   base = ASSETS_URL + "/.report/svg/";

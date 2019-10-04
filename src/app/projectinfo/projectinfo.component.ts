@@ -10,7 +10,8 @@ import { Project } from "../project";
 export class ProjectinfoComponent implements OnInit {
 
   project: Project;
-  constructor(public projectService: ProjectService) { }
+  constructor(public projectService: ProjectService) {
+  }
 
   ngOnInit() {
     this.projectService.GetProject().then(

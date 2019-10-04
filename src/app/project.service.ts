@@ -13,14 +13,21 @@ export class ProjectService {
   project: Project;
   constructor() {
     this.project = TaskInfo.taskinfo();
-    console.log(this.project);
+    // console.log(this.project);
   }
 
   GetProject() {
     let promise = new Promise<Project>((resolve, reject) => {
+      // console.log("GetProject: ", this.project);
+      // console.log("GetProject.result: ", this.project.result);
+      // console.log("GetProject.result.unknowns: ", this.project.result.unknowns);
       resolve(this.project);
     });
 
     return promise;
+  }
+
+  getProject(): Observable<Project> {
+    return of(this.project);
   }
 }

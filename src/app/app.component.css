@@ -1,3 +1,8 @@
-.img-fluid {
-    width: 100%;
+.gutter-box {
+    background: #00a0e9;
+    padding: 5px 0;
+  }
+
+.text-highlight {
+    text-align: center;
 }

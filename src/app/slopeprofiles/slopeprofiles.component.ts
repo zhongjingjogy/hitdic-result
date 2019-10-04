@@ -12,12 +12,16 @@ export class SlopeprofilesComponent implements OnInit {
   project: Project;
   couples_src: string[];
 
-  constructor(public projectService: ProjectService) { }
+  constructor(public projectService: ProjectService) {
+  }
 
   ngOnInit() {
     this.projectService.GetProject().then(
-      project => this.project = project);
-    console.log(this.project.Result.Couples);
+      project => {
+        console.log("composition profiles: ", this.project);
+        this.project = project;
+      }
+    );
   }
 
   base = ASSETS_URL + "/.report/svg/";

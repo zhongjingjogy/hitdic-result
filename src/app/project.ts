@@ -8,7 +8,7 @@ export class Project {
     Createdtime: string;
     Username: string;
     Computingnode: string;
-    Result: Result;
+    result: Result;
 }
 
 export class Result {
@@ -17,7 +17,7 @@ export class Result {
     Couples: Couple[];
     Logfile: string;
     Number: number;
-    Unknwons: Unknown;
+    unknowns: Unknown[];
     Cost: number;
     Elapsed: number;
 }

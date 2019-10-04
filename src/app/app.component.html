@@ -1,45 +1,25 @@
-<div class="container">
-  <div class="row">
-    <div class="col text-center">
-      <img class="img-fluid" alt="Cinque Terre" [defaultImage]="'assets/hitdic-automated.svg'" [lazyLoad]="image">
-      <h3>Powered by Prof. Lijun's Group from Central South University</h3>
-    </div>
-
-  </div>
-</div>
-
-<div class="contrainer">
-  <div class="row">
-    <div class="col">
-      <app-projectinfo></app-projectinfo>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-convergence></app-convergence>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-      <app-compprofiles></app-compprofiles>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-slopeprofiles></app-slopeprofiles>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-fluxprofiles></app-fluxprofiles>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-interdprofiles></app-interdprofiles>
+<div class="gutter-example">
+  <div nz-row>
+    <div nz-col nzSpan="24">
+      <nz-card nzHoverable [nzCover]="coverTemplate">
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img alt="Cinque Terre" [defaultImage]="'assets/hitdic-automated.svg'" [lazyLoad]="image">
+        <h3 class="text-highlight">Powered by Prof. Lijun's Group from Central South University</h3>
+      </ng-template>
     </div>
   </div>
 </div>
+
+<nz-back-top></nz-back-top>
+
+<app-projectinfo></app-projectinfo>
+<app-convergence></app-convergence>
+<app-compprofiles></app-compprofiles>
+<app-slopeprofiles></app-slopeprofiles>
+<app-fluxprofiles></app-fluxprofiles>
+<app-interdprofiles></app-interdprofiles>
+
 <router-outlet></router-outlet>
 
 <div class="container">
