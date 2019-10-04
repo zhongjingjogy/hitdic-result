@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CompprofilesComponent } from './compprofiles/compprofiles.component';
 import { ProjectinfoComponent } from './projectinfo/projectinfo.component';
 import { SlopeprofilesComponent } from './slopeprofiles/slopeprofiles.component';
@@ -34,7 +34,7 @@ registerLocaleData(en); // <-- import it
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    // NgbModule,
     LazyLoadImageModule,
     NgZorroAntdModule,
     FormsModule,
