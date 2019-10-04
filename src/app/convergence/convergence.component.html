@@ -1,0 +1,93 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-Convergence">
+    <ngb-panel title="Convergence">
+        <ng-template ngbPanelContent>
+            <div class="container" *ngIf="project.method == 'mcmc'">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Convergence sequence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt-hist.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Uncertainty range</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" *ngIf="project.method == 'aic'">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Convergence sequence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" *ngIf="project.method == 'bic'">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Convergence sequence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" *ngIf="project.method == 'l2norm'">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Convergence sequence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" *ngIf="project.method == 'aic'">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="card">
+                                <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                    alt="Card image" [lazyLoad]="image">
+                                <div class="card-body">
+                                    <p class="card-title">Convergence sequence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" *ngIf="project.method == 'l1norm'">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="{{base + project.result.logfile + '.txt.svg'}}"
+                                alt="Card image" [lazyLoad]="image">
+                            <div class="card-body">
+                                <p class="card-title">Convergence sequence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>

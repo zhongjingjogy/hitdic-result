@@ -1,0 +1,17 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-1">
+    <ngb-panel title="Overview">
+        <ng-template ngbPanelContent>
+            <p><span class="badge badge-primary">Title: {{project.title}}</span> /
+                <span class="badge badge-secondary">Taskid: {{project.taskid}}</span> /
+                <span class="badge badge-success">Status: {{project.status}}</span></p>
+            <p><span class="badge badge-info">Method: {{project.method}}</span> / <span
+                    class="badge badge-info">Created: {{project.createdtime  | date:"yyy-MM-dd"}}</span> / <span
+                    class="badge badge-info">Elapsed: {{project.elapsed }} mins</span></p>
+            <p>
+                <span class="badge badge-dark"><a type="button" href="assets/.report/ansatz.tdb">View TDB
+                        file</a></span>
+            </p>
+            <p></p>
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>

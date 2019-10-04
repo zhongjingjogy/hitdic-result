@@ -1,0 +1,7 @@
+var TaskInfo = (function () {
+    return {
+        taskinfo: function () {
+            return { "taskid": "unknown", "title": "unknown", "note": "unknown", "status": "unknown", "method": "mcmc", "corenumber": 0, "createdtime": "2019-10-03 14:41:58.159722", "username": "unknown", "computingnode": "unknown", "result": { "method": "mcmc", "src": "d:\\manuscripts\\paper-MgAlZn\\materials\\benchmark\\ternary.3\\results\\0.0010.tar\\0.0010\\set3", "couples": [{ "couplename": "couple0", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple1", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple2", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple3", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple4", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple5", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple6", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }, { "couplename": "couple7", "temperature": 673.0, "time": 36000.0, "initpos": 0.0001 }], "logfile": "mcmc-bakGPe", "number": 3, "unknowns": [{ "key": "A0", "value": -115657.33902762525 }, { "key": "A1", "value": -87551.59419897331 }, { "key": "A2", "value": -106399.8665658032 }], "cost": 0.0017669754718385876, "elapsed": 46707.490789241 } };
+        }
+    }
+})(TaskInfo || {})

@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <img class="img-fluid" alt="Cinque Terre" [defaultImage]="'assets/hitdic-automated.svg'" [lazyLoad]="image">
+      <h3>Powered by Prof. Lijun's Group from Central South University</h3>
+    </div>
+
+  </div>
+</div>
+
+<div class="contrainer">
+  <div class="row">
+    <div class="col">
+      <app-projectinfo></app-projectinfo>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-convergence></app-convergence>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <app-compprofiles></app-compprofiles>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-slopeprofiles></app-slopeprofiles>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-fluxprofiles></app-fluxprofiles>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-interdprofiles></app-interdprofiles>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="copyright" style="margin-top:50px;">
+    <p>&copy; Copyright 2017-2019, HitDIC team.</p>
+    <p>Designed, built and maintained by <a href="https://zhongjing.hitdic.com" target="_blank" rel="noopener">Jing
+        Zhong</a> with the help of our colleagues.</p>
+    <p>Feedbacks: zhongjingjogy@gmail.com</p>
+  </div>
