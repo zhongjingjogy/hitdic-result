@@ -27,5 +27,6 @@ export class ConvergenceComponent implements OnInit {
     return this.project.result.unknowns;
   }
 
-  base = ASSETS_URL + "/.report/svg/";
+  base = ASSETS_URL + "/svg/";
+  image = "";
 }

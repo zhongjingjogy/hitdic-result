@@ -24,5 +24,6 @@ export class SlopeprofilesComponent implements OnInit {
     );
   }
 
-  base = ASSETS_URL + "/.report/svg/";
+  base = ASSETS_URL + "/svg/";
+  image = "";
 }

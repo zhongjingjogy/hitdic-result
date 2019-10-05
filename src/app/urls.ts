@@ -1,1 +1,1 @@
-export const ASSETS_URL: string = './assets/';
+export const ASSETS_URL: string = './assets/.report';

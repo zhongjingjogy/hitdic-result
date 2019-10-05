@@ -1,35 +1,35 @@
 export class Project {
-    Taskid: string;
-    Title: string;
-    Note: string;
-    Status: string;
-    Method: string;
-    Corennumber: number;
-    Createdtime: string;
-    Username: string;
-    Computingnode: string;
+    taskid: string;
+    title: string;
+    note: string;
+    status: string;
+    method: string;
+    corennumber: number;
+    createdtime: string;
+    username: string;
+    computingnode: string;
     result: Result;
 }
 
 export class Result {
-    Method: string;
-    Src: string;
-    Couples: Couple[];
-    Logfile: string;
-    Number: number;
+    method: string;
+    src: string;
+    couples: Couple[];
+    logfile: string;
+    number: number;
     unknowns: Unknown[];
-    Cost: number;
-    Elapsed: number;
+    cost: number;
+    elapsed: number;
 }
 
 export class Couple {
-    Couplename: string;
-    Temperature: number;
-    Time: number;
-    Initpos: number;
+    couplename: string;
+    temperature: number;
+    time: number;
+    initpos: number;
 }
 
 export class Unknown {
-    Key: string;
-    Value: string;
+    key: string;
+    value: string;
 }

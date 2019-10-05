@@ -17,5 +17,5 @@ export class ProjectinfoComponent implements OnInit {
     this.projectService.GetProject().then(
       project => this.project = project);
   }
-
+  image = "";
 }
